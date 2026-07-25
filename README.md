@@ -7,6 +7,16 @@ Feature:
     - Added skip button to seed repeat screen.
     - Disabled root check, fixing "invalid state" error.
 
+How to build:
+
+```
+sudo docker build --build-arg BUILD_NR=1 -t airgap-vault-android -f build/android/Dockerfile .
+
+sudo docker create --name airgap-apk airgap-vault-android
+sudo docker cp airgap-apk:/app/android-debug-aligned.apk /tmp/airgap-vault-debug.apk
+sudo docker rm airgap-apk
+```
+
 # AirGap Vault
 
 <p align="left">
