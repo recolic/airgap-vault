@@ -1,3 +1,12 @@
+# AirGap Vault recolic's Fork
+
+Feature:
+
+1. Make AirGap Vault less secured.
+    - Disabled 30s wait check in seed screen.
+    - Added skip button to seed repeat screen.
+    - Disabled root check, fixing "invalid state" error.
+
 # AirGap Vault
 
 <p align="left">
